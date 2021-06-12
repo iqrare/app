@@ -6,35 +6,133 @@ class Startpg extends Component {
 	render() {
 		return (
 			<div>
-                    <nav class="navbar navbar-expand-lg fixed-top">
-                    <a class="navbar-brand" href="/">Home</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
 
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-4">
+      <h1 class="logo"><a href="/">RareIQ</a></h1>
+        
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="/">Home</a></li>
+          <li><a class="nav-link scrollto" href="/">About</a></li>
+		   <li class="dropdown"><a href="/"><span>Courses</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/">Testing</a></li>
+              <li class="dropdown"><a href="/"><span>Framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="/">Yii</a></li>
+                  <li><a href="/">Laravel</a></li>
+                  <li><a href="/">Codeigniter</a></li>
+                  <li><a href="/">Sympfony</a></li>
+               
+                </ul>
+              </li>
+              <li><a href="/">Oracle</a></li>
+              <li><a href="/">C, C++</a></li>
+              <li><a href="/">Java</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="/">Trainer</a></li>
+          <li><a class="nav-link scrollto " href="/">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="/">Team</a></li>
+          
+         
+        	<li>  
+  <a href="/" class="btn btn-default btn-rounded" data-toggle="modal">Login</a>
+</li>
+		  
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav> 
 
-                            <li class="nav-item">
-                                <a class="nav-link" data-value="about" href="/about">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " data-value="portfolio" href="/">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " data-value="blog" href="http://localhost:3002/">Login</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " data-value="team" href="/">
-                                    Team</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " data-value="contact" href="/">Contact</a>
-                            </li>
-                        </ul>
+    </div>
+  </header>   
 
-                    </div>
-                </nav>
+ 
+<div class="modal fade" id="modalLoginAvatar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
+   
+    <div class="modal-content">
+	
+      
+      <div class="modal-header">
+        </div>
+       <div class="modal-body text-center mb-1">
+
+        <h5 class="mt-1 mb-2">We will give a call back!</h5>
+
+        <div class="md-form ml-0 mr-0">
+        <div>
+          <input type="name"  id="form29" placeholder="Enter your Name" class="form-control form-control-sm validate ml-0"/>
+          </div>
+          <div>
+
+		  <input type="number"   id="form29" placeholder="Enter your Phone Number" class="form-control form-control-sm validate ml-0"/>
+          </div>
+          <div>
+          <input type="password"  id="form29" placeholder="Enter your Email" class="form-control form-control-sm validate ml-0"/>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <button class="btn btn-cyan mt-1">Login <i class="fas fa-sign-in ml-1"></i></button>
+        </div>
+      </div>
+
+    </div>
+     
+  </div>
+</div>
+
+
+<section id="hero">
+    <div class="hero-container">
+      <h3>Your Future is near!</h3>
+      <h1>We're Creative Agency</h1>
+      <h2>We are team of talented Trainers making Computer software engineers to find employment in MNC industry!!</h2>
+      <a href="/about" class="btn-get-started scrollto">Search your course..</a>
+    </div>
+  </section> 
+
+  
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>RareIQ</h3>
+          
+          </div>
+       
+           
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>RareIQ</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="/" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="/" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="/" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="/" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer> 
+
+
+
 
 			</div>);
 	}
